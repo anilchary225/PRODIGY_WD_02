@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.stopwatch {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #4a90e2;
+}
+
+.time-display {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.controls .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls .btn:disabled {
+    background-color: #a3c6f1;
+    cursor: not-allowed;
+}
+
+.controls .btn:hover:not(:disabled) {
+    background-color: #357ABD;
+}
+
+.laps {
+    margin-top: 30px;
+}
+
+.laps h2 {
+    font-size: 22px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+#laps-list {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#laps-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#laps-list li:nth-child(odd) {
+    background-color: #f0f4f8;
+}
